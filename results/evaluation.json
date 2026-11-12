@@ -1,0 +1,81 @@
+{
+  "dataset_rows": 920,
+  "features_used": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalch",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "positive_definition": "num > 0",
+  "positive_count": 509,
+  "negative_count": 411,
+  "development_rows": 736,
+  "selection_train_rows": 588,
+  "validation_rows": 148,
+  "test_rows": 184,
+  "random_state": 42,
+  "best_model_by_validation_roc_auc": "Logistic Regression",
+  "validation_roc_auc_by_model": {
+    "Logistic Regression": 0.8701034737620105,
+    "Decision Tree": 0.815410199556541
+  },
+  "best_model_test_metrics": {
+    "model": "Logistic Regression",
+    "accuracy": 0.8315217391304348,
+    "precision": 0.8380952380952381,
+    "recall": 0.8627450980392157,
+    "f1": 0.8502415458937198,
+    "roc_auc": 0.9078192252510761,
+    "validation_roc_auc": 0.8701034737620105
+  },
+  "classification_report": {
+    "No disease": {
+      "precision": 0.8227848101265823,
+      "recall": 0.7926829268292683,
+      "f1-score": 0.8074534161490683,
+      "support": 82.0
+    },
+    "Disease": {
+      "precision": 0.8380952380952381,
+      "recall": 0.8627450980392157,
+      "f1-score": 0.8502415458937198,
+      "support": 102.0
+    },
+    "accuracy": 0.8315217391304348,
+    "macro avg": {
+      "precision": 0.8304400241109102,
+      "recall": 0.827714012434242,
+      "f1-score": 0.828847481021394,
+      "support": 184.0
+    },
+    "weighted avg": {
+      "precision": 0.8312721125874676,
+      "recall": 0.8315217391304348,
+      "f1-score": 0.8311729228553425,
+      "support": 184.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "No disease",
+    "Disease"
+  ],
+  "confusion_matrix": [
+    [
+      65,
+      17
+    ],
+    [
+      14,
+      88
+    ]
+  ]
+}
